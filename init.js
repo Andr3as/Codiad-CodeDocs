@@ -52,7 +52,6 @@
         //
         //////////////////////////////////////////////////////////
         contextMenu: function(path) {
-            codiad.filemanager.contextMenuHide();
             this.parse(path);
         },
         
@@ -134,6 +133,6 @@
             } else {
                 return false;
             }
-        },
+        }
     };
 })(this, jQuery);
