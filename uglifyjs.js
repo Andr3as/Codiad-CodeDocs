@@ -1576,7 +1576,6 @@ function tokenizer($TEXT) {
                 };
                 if (!is_comment) {
                         ret.comments_before = S.comments_before;
-                        // debugger;
                         S.comments_before = [];
                         // make note of any newlines in the comments that came before
                         for (var i = 0, len = ret.comments_before.length; i < len; i++) {
@@ -1585,7 +1584,6 @@ function tokenizer($TEXT) {
                 }
                 S.newline_before = false;
                 // console.log("token:", ret);
-                // debugger;
                 return ret;
         };
 
@@ -2006,7 +2004,6 @@ function parse($TEXT, exigent_mode, embed_tokens) {
         };
 
         function as() {
-                debugger;
                 return slice(arguments);
         };
 
@@ -2549,7 +2546,6 @@ function parse($TEXT, exigent_mode, embed_tokens) {
         };
 
         return as("toplevel", (function(a){
-                debugger;
                 while (!is("eof"))
                         a.push(statement());
                 return a;
